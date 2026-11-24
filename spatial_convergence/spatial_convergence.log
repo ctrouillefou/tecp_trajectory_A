@@ -1,0 +1,317 @@
+nohup: ignoring input
+Building mesh 12^3 (dx=0.070833 m, domain=0.8500 m)
+V_total = 6.141250e-01 m^3
+========================================================================
+SPATIAL CONVERGENCE 12^3 -- 4 runs x 30 d
+========================================================================
+
+========================================================================
+[run 1/4] baseline
+========================================================================
+Configuration     = C2
+Pmax factor       = 2.0
+Rmaint divisor    = 1.0
+k_CO2             = 1.000000e-03
+RQ                = 0.85
+gamma             = 2.000000e-03
+B_ROOT_FRACTION   = 0.2
+S_INIT            = 1.000000e-05
+M_INIT            = 1.000000e-01
+Duration          = 30 days (7200 steps)
+
+--- crew_mult = 0.1 ---
+O2_cons (test)  = 9.722000e-10 s^-1
+CO2_prod (test) = 8.263700e-10 s^-1
+Biomass initialised (80% M_photo + 20% M_uptake). Mean = 0.022500, Max = 0.080000
+🚀 Running crew ×0.1...
+[M] step=   0 mean=0.099999404840 min=0.099999404762 max=0.099999405030 delta=-5.952e-07
+[crew ×0.1] Step 0/7200 (0.0%) | CO2 = 0.000402 | O2 = 0.209998 | T = 298.00 | P_photo = 8.051e-09
+[M] step=   1 mean=0.099998809684 min=0.099998809527 max=0.099998810064 delta=-5.952e-07
+[M] step=  10 mean=0.099993453438 min=0.099993452576 max=0.099993455532 delta=-5.951e-07
+[M] step= 100 mean=0.099939906861 min=0.099939898938 max=0.099939923817 delta=-5.948e-07
+[M] step= 479 mean=0.099714732782 min=0.099714707754 max=0.099714772778 delta=-5.935e-07
+[M] step= 500 mean=0.099702271058 min=0.099702245581 max=0.099702311600 delta=-5.934e-07
+[crew ×0.1] Step 500/7200 (6.9%) | CO2 = 0.000806 | O2 = 0.209568 | T = 297.92 | P_photo = 1.240e-08
+[M] step= 720 mean=0.099571813832 min=0.099571784934 max=0.099571858685 delta=-5.926e-07
+[M] step=1000 mean=0.099406025712 min=0.099405994114 max=0.099406074283 delta=-5.916e-07
+[crew ×0.1] Step 1000/7200 (13.9%) | CO2 = 0.000850 | O2 = 0.209497 | T = 297.84 | P_photo = 1.318e-08
+[crew ×0.1] Step 1500/7200 (20.8%) | CO2 = 0.000822 | O2 = 0.209499 | T = 297.75 | P_photo = 1.336e-08
+[crew ×0.1] Step 2000/7200 (27.8%) | CO2 = 0.000784 | O2 = 0.209511 | T = 297.67 | P_photo = 1.340e-08
+[crew ×0.1] Step 2500/7200 (34.7%) | CO2 = 0.000748 | O2 = 0.209520 | T = 297.59 | P_photo = 1.342e-08
+[crew ×0.1] Step 3000/7200 (41.7%) | CO2 = 0.000719 | O2 = 0.209524 | T = 297.51 | P_photo = 1.346e-08
+[crew ×0.1] Step 3500/7200 (48.6%) | CO2 = 0.000694 | O2 = 0.209523 | T = 297.43 | P_photo = 1.350e-08
+[crew ×0.1] Step 4000/7200 (55.6%) | CO2 = 0.000672 | O2 = 0.209518 | T = 297.34 | P_photo = 1.354e-08
+[crew ×0.1] Step 4500/7200 (62.5%) | CO2 = 0.000654 | O2 = 0.209510 | T = 297.26 | P_photo = 1.358e-08
+[crew ×0.1] Step 5000/7200 (69.4%) | CO2 = 0.000638 | O2 = 0.209500 | T = 297.18 | P_photo = 1.362e-08
+[crew ×0.1] Step 5500/7200 (76.4%) | CO2 = 0.000624 | O2 = 0.209488 | T = 297.10 | P_photo = 1.363e-08
+[crew ×0.1] Step 6000/7200 (83.3%) | CO2 = 0.000611 | O2 = 0.209474 | T = 297.02 | P_photo = 1.363e-08
+[crew ×0.1] Step 6500/7200 (90.3%) | CO2 = 0.000601 | O2 = 0.209458 | T = 296.93 | P_photo = 1.363e-08
+[crew ×0.1] Step 7000/7200 (97.2%) | CO2 = 0.000591 | O2 = 0.209441 | T = 296.85 | P_photo = 1.362e-08
+[crew ×0.1] Step 7199/7200 (100.0%) | CO2 = 0.000588 | O2 = 0.209434 | T = 296.82 | P_photo = 1.369e-08
+
+========================================================================
+DIAGNOSTIC SUMMARY (crew ×0.1)
+========================================================================
+
+Time window: t = [646.0 h, 718.0 h] (37 records, actual span = 72.0 h)
+
+Carbon fluxes (mean over last 72.0 h), volume-averaged:
+  Photosynthesis   P_photo : +1.364226e-08 s^-1
+  Plant respiration R_plant: +1.276360e-08 s^-1
+  Crew production   R_crew : +8.263700e-10 s^-1
+  Net flux                 : -5.229364e-11 s^-1
+  (positive = net source of CO2, negative = net sink)
+
+CO2 / O2 / T statistics (last 72.0 h):
+  CO2 mean = 0.000595  min = 0.000589  max = 0.000602
+  O2  mean = 0.209447  min = 0.209434  max = 0.209459
+  T   mean = 296.88 K  min = 296.82  max = 296.94
+
+Basic gas threshold checks:
+  CO2 < 0.005 ?  → YES  (max = 0.000602)
+  O2  > 0.150 ?  → YES  (min = 0.209434)
+
+📁 Results saved in: TrajA_C2_30d_crew_0.100_20261105_221520
+========================================================================
+  -> renamed TrajA_C2_30d_crew_0.100_20261105_221520 -> TrajA_C2_12cubed_30d_crew_0.100_baseline_20261105_221520
+  -> row appended to spatial_convergence/spatial_convergence_12cubed.csv
+
+[run 1/4] baseline DONE in 192.1 min
+  co2_max = 8.518430e-04  t_peak = 90.0 h  t_QPR = 89.6 h  dB = +1.950065e-03
+
+========================================================================
+[run 2/4] Pmax_x0.80
+========================================================================
+Configuration     = C2
+Pmax factor       = 1.6
+Rmaint divisor    = 1.0
+k_CO2             = 1.000000e-03
+RQ                = 0.85
+gamma             = 2.000000e-03
+B_ROOT_FRACTION   = 0.2
+S_INIT            = 1.000000e-05
+M_INIT            = 1.000000e-01
+Duration          = 30 days (7200 steps)
+
+--- crew_mult = 0.1 ---
+O2_cons (test)  = 9.722000e-10 s^-1
+CO2_prod (test) = 8.263700e-10 s^-1
+Biomass initialised (80% M_photo + 20% M_uptake). Mean = 0.022500, Max = 0.080000
+🚀 Running crew ×0.1...
+[M] step=   0 mean=0.099999404840 min=0.099999404762 max=0.099999405030 delta=-5.952e-07
+[crew ×0.1] Step 0/7200 (0.0%) | CO2 = 0.000402 | O2 = 0.209997 | T = 298.00 | P_photo = 6.459e-09
+[M] step=   1 mean=0.099998809684 min=0.099998809527 max=0.099998810064 delta=-5.952e-07
+[M] step=  10 mean=0.099993453438 min=0.099993452576 max=0.099993455532 delta=-5.951e-07
+[M] step= 100 mean=0.099939906861 min=0.099939898938 max=0.099939923817 delta=-5.948e-07
+[M] step= 479 mean=0.099714732782 min=0.099714707754 max=0.099714772778 delta=-5.935e-07
+[M] step= 500 mean=0.099702271058 min=0.099702245581 max=0.099702311600 delta=-5.934e-07
+[crew ×0.1] Step 500/7200 (6.9%) | CO2 = 0.001042 | O2 = 0.209332 | T = 297.92 | P_photo = 1.122e-08
+[M] step= 720 mean=0.099571813832 min=0.099571784934 max=0.099571858685 delta=-5.926e-07
+[M] step=1000 mean=0.099406025712 min=0.099405994114 max=0.099406074283 delta=-5.916e-07
+[crew ×0.1] Step 1000/7200 (13.9%) | CO2 = 0.001231 | O2 = 0.209117 | T = 297.84 | P_photo = 1.241e-08
+[crew ×0.1] Step 1500/7200 (20.8%) | CO2 = 0.001266 | O2 = 0.209055 | T = 297.75 | P_photo = 1.295e-08
+[crew ×0.1] Step 2000/7200 (27.8%) | CO2 = 0.001236 | O2 = 0.209059 | T = 297.67 | P_photo = 1.320e-08
+[crew ×0.1] Step 2500/7200 (34.7%) | CO2 = 0.001183 | O2 = 0.209086 | T = 297.59 | P_photo = 1.333e-08
+[crew ×0.1] Step 3000/7200 (41.7%) | CO2 = 0.001126 | O2 = 0.209116 | T = 297.51 | P_photo = 1.339e-08
+[crew ×0.1] Step 3500/7200 (48.6%) | CO2 = 0.001074 | O2 = 0.209142 | T = 297.43 | P_photo = 1.343e-08
+[crew ×0.1] Step 4000/7200 (55.6%) | CO2 = 0.001030 | O2 = 0.209160 | T = 297.34 | P_photo = 1.347e-08
+[crew ×0.1] Step 4500/7200 (62.5%) | CO2 = 0.000992 | O2 = 0.209172 | T = 297.26 | P_photo = 1.350e-08
+[crew ×0.1] Step 5000/7200 (69.4%) | CO2 = 0.000960 | O2 = 0.209177 | T = 297.18 | P_photo = 1.352e-08
+[crew ×0.1] Step 5500/7200 (76.4%) | CO2 = 0.000933 | O2 = 0.209178 | T = 297.10 | P_photo = 1.354e-08
+[crew ×0.1] Step 6000/7200 (83.3%) | CO2 = 0.000910 | O2 = 0.209175 | T = 297.01 | P_photo = 1.354e-08
+[crew ×0.1] Step 6500/7200 (90.3%) | CO2 = 0.000890 | O2 = 0.209169 | T = 296.93 | P_photo = 1.353e-08
+[crew ×0.1] Step 7000/7200 (97.2%) | CO2 = 0.000872 | O2 = 0.209160 | T = 296.85 | P_photo = 1.352e-08
+[crew ×0.1] Step 7199/7200 (100.0%) | CO2 = 0.000866 | O2 = 0.209156 | T = 296.82 | P_photo = 1.359e-08
+
+========================================================================
+DIAGNOSTIC SUMMARY (crew ×0.1)
+========================================================================
+
+Time window: t = [646.0 h, 718.0 h] (37 records, actual span = 72.0 h)
+
+Carbon fluxes (mean over last 72.0 h), volume-averaged:
+  Photosynthesis   P_photo : +1.353657e-08 s^-1
+  Plant respiration R_plant: +1.261469e-08 s^-1
+  Crew production   R_crew : +8.263700e-10 s^-1
+  Net flux                 : -9.550168e-11 s^-1
+  (positive = net source of CO2, negative = net sink)
+
+CO2 / O2 / T statistics (last 72.0 h):
+  CO2 mean = 0.000879  min = 0.000867  max = 0.000892
+  O2  mean = 0.209163  min = 0.209156  max = 0.209169
+  T   mean = 296.88 K  min = 296.82  max = 296.94
+
+Basic gas threshold checks:
+  CO2 < 0.005 ?  → YES  (max = 0.000892)
+  O2  > 0.150 ?  → YES  (min = 0.209156)
+
+📁 Results saved in: TrajA_C2_30d_crew_0.100_20261106_012728
+========================================================================
+  -> renamed TrajA_C2_30d_crew_0.100_20261106_012728 -> TrajA_C2_12cubed_30d_crew_0.100_Pmax_x0.80_20261106_012728
+  -> row appended to spatial_convergence/spatial_convergence_12cubed.csv
+
+[run 2/4] Pmax_x0.80 DONE in 199.3 min
+  co2_max = 1.266572e-03  t_peak = 140.0 h  t_QPR = 139.6 h  dB = +1.672611e-03
+
+========================================================================
+[run 3/4] Pmax_x1.20
+========================================================================
+Configuration     = C2
+Pmax factor       = 2.4
+Rmaint divisor    = 1.0
+k_CO2             = 1.000000e-03
+RQ                = 0.85
+gamma             = 2.000000e-03
+B_ROOT_FRACTION   = 0.2
+S_INIT            = 1.000000e-05
+M_INIT            = 1.000000e-01
+Duration          = 30 days (7200 steps)
+
+--- crew_mult = 0.1 ---
+O2_cons (test)  = 9.722000e-10 s^-1
+CO2_prod (test) = 8.263700e-10 s^-1
+Biomass initialised (80% M_photo + 20% M_uptake). Mean = 0.022500, Max = 0.080000
+🚀 Running crew ×0.1...
+[M] step=   0 mean=0.099999404840 min=0.099999404762 max=0.099999405030 delta=-5.952e-07
+[crew ×0.1] Step 0/7200 (0.0%) | CO2 = 0.000401 | O2 = 0.209999 | T = 298.00 | P_photo = 9.633e-09
+[M] step=   1 mean=0.099998809684 min=0.099998809527 max=0.099998810064 delta=-5.952e-07
+[M] step=  10 mean=0.099993453438 min=0.099993452576 max=0.099993455532 delta=-5.951e-07
+[M] step= 100 mean=0.099939906861 min=0.099939898938 max=0.099939923817 delta=-5.948e-07
+[M] step= 479 mean=0.099714732782 min=0.099714707754 max=0.099714772778 delta=-5.935e-07
+[M] step= 500 mean=0.099702271058 min=0.099702245581 max=0.099702311600 delta=-5.934e-07
+[crew ×0.1] Step 500/7200 (6.9%) | CO2 = 0.000634 | O2 = 0.209740 | T = 297.92 | P_photo = 1.303e-08
+[M] step= 720 mean=0.099571813832 min=0.099571784934 max=0.099571858685 delta=-5.926e-07
+[M] step=1000 mean=0.099406025712 min=0.099405994114 max=0.099406074283 delta=-5.916e-07
+[crew ×0.1] Step 1000/7200 (13.9%) | CO2 = 0.000627 | O2 = 0.209720 | T = 297.84 | P_photo = 1.339e-08
+[crew ×0.1] Step 1500/7200 (20.8%) | CO2 = 0.000598 | O2 = 0.209723 | T = 297.75 | P_photo = 1.343e-08
+[crew ×0.1] Step 2000/7200 (27.8%) | CO2 = 0.000572 | O2 = 0.209723 | T = 297.67 | P_photo = 1.344e-08
+[crew ×0.1] Step 2500/7200 (34.7%) | CO2 = 0.000550 | O2 = 0.209718 | T = 297.59 | P_photo = 1.347e-08
+[crew ×0.1] Step 3000/7200 (41.7%) | CO2 = 0.000532 | O2 = 0.209711 | T = 297.51 | P_photo = 1.350e-08
+[crew ×0.1] Step 3500/7200 (48.6%) | CO2 = 0.000516 | O2 = 0.209700 | T = 297.43 | P_photo = 1.355e-08
+[crew ×0.1] Step 4000/7200 (55.6%) | CO2 = 0.000502 | O2 = 0.209688 | T = 297.34 | P_photo = 1.360e-08
+[crew ×0.1] Step 4500/7200 (62.5%) | CO2 = 0.000490 | O2 = 0.209674 | T = 297.26 | P_photo = 1.364e-08
+[crew ×0.1] Step 5000/7200 (69.4%) | CO2 = 0.000479 | O2 = 0.209658 | T = 297.18 | P_photo = 1.367e-08
+[crew ×0.1] Step 5500/7200 (76.4%) | CO2 = 0.000470 | O2 = 0.209641 | T = 297.10 | P_photo = 1.369e-08
+[crew ×0.1] Step 6000/7200 (83.3%) | CO2 = 0.000462 | O2 = 0.209623 | T = 297.02 | P_photo = 1.369e-08
+[crew ×0.1] Step 6500/7200 (90.3%) | CO2 = 0.000454 | O2 = 0.209604 | T = 296.93 | P_photo = 1.368e-08
+[crew ×0.1] Step 7000/7200 (97.2%) | CO2 = 0.000448 | O2 = 0.209584 | T = 296.85 | P_photo = 1.368e-08
+[crew ×0.1] Step 7199/7200 (100.0%) | CO2 = 0.000446 | O2 = 0.209576 | T = 296.82 | P_photo = 1.374e-08
+
+========================================================================
+DIAGNOSTIC SUMMARY (crew ×0.1)
+========================================================================
+
+Time window: t = [646.0 h, 718.0 h] (37 records, actual span = 72.0 h)
+
+Carbon fluxes (mean over last 72.0 h), volume-averaged:
+  Photosynthesis   P_photo : +1.370111e-08 s^-1
+  Plant respiration R_plant: +1.283909e-08 s^-1
+  Crew production   R_crew : +8.263700e-10 s^-1
+  Net flux                 : -3.565333e-11 s^-1
+  (positive = net source of CO2, negative = net sink)
+
+CO2 / O2 / T statistics (last 72.0 h):
+  CO2 mean = 0.000451  min = 0.000446  max = 0.000455
+  O2  mean = 0.209591  min = 0.209577  max = 0.209606
+  T   mean = 296.88 K  min = 296.82  max = 296.94
+
+Basic gas threshold checks:
+  CO2 < 0.005 ?  → YES  (max = 0.000455)
+  O2  > 0.150 ?  → YES  (min = 0.209577)
+
+📁 Results saved in: TrajA_C2_30d_crew_0.100_20261106_044644
+========================================================================
+  -> renamed TrajA_C2_30d_crew_0.100_20261106_044644 -> TrajA_C2_12cubed_30d_crew_0.100_Pmax_x1.20_20261106_044644
+  -> row appended to spatial_convergence/spatial_convergence_12cubed.csv
+
+[run 3/4] Pmax_x1.20 DONE in 202.5 min
+  co2_max = 6.398840e-04  t_peak = 64.0 h  t_QPR = 63.8 h  dB = +2.091119e-03
+
+========================================================================
+[run 4/4] Y_B_x0.80
+========================================================================
+Configuration     = C2
+Pmax factor       = 2.0
+Rmaint divisor    = 1.0
+k_CO2             = 1.000000e-03
+RQ                = 0.85
+gamma             = 2.000000e-03
+B_ROOT_FRACTION   = 0.2
+S_INIT            = 1.000000e-05
+M_INIT            = 1.000000e-01
+Duration          = 30 days (7200 steps)
+
+--- crew_mult = 0.1 ---
+O2_cons (test)  = 9.722000e-10 s^-1
+CO2_prod (test) = 8.263700e-10 s^-1
+Biomass initialised (80% M_photo + 20% M_uptake). Mean = 0.022500, Max = 0.080000
+🚀 Running crew ×0.1...
+[M] step=   0 mean=0.099999404840 min=0.099999404762 max=0.099999405030 delta=-5.952e-07
+[crew ×0.1] Step 0/7200 (0.0%) | CO2 = 0.000402 | O2 = 0.209998 | T = 298.00 | P_photo = 8.051e-09
+[M] step=   1 mean=0.099998809684 min=0.099998809527 max=0.099998810064 delta=-5.952e-07
+[M] step=  10 mean=0.099993453438 min=0.099993452576 max=0.099993455532 delta=-5.951e-07
+[M] step= 100 mean=0.099939906861 min=0.099939898938 max=0.099939923817 delta=-5.948e-07
+[M] step= 479 mean=0.099714732782 min=0.099714707754 max=0.099714772778 delta=-5.935e-07
+[M] step= 500 mean=0.099702271058 min=0.099702245581 max=0.099702311600 delta=-5.934e-07
+[crew ×0.1] Step 500/7200 (6.9%) | CO2 = 0.000809 | O2 = 0.209565 | T = 297.92 | P_photo = 1.215e-08
+[M] step= 720 mean=0.099571813832 min=0.099571784934 max=0.099571858685 delta=-5.926e-07
+[M] step=1000 mean=0.099406025712 min=0.099405994114 max=0.099406074283 delta=-5.916e-07
+[crew ×0.1] Step 1000/7200 (13.9%) | CO2 = 0.000863 | O2 = 0.209485 | T = 297.84 | P_photo = 1.265e-08
+[crew ×0.1] Step 1500/7200 (20.8%) | CO2 = 0.000844 | O2 = 0.209477 | T = 297.75 | P_photo = 1.260e-08
+[crew ×0.1] Step 2000/7200 (27.8%) | CO2 = 0.000812 | O2 = 0.209483 | T = 297.67 | P_photo = 1.241e-08
+[crew ×0.1] Step 2500/7200 (34.7%) | CO2 = 0.000780 | O2 = 0.209488 | T = 297.59 | P_photo = 1.221e-08
+[crew ×0.1] Step 3000/7200 (41.7%) | CO2 = 0.000753 | O2 = 0.209490 | T = 297.51 | P_photo = 1.201e-08
+[crew ×0.1] Step 3500/7200 (48.6%) | CO2 = 0.000728 | O2 = 0.209488 | T = 297.42 | P_photo = 1.182e-08
+[crew ×0.1] Step 4000/7200 (55.6%) | CO2 = 0.000707 | O2 = 0.209483 | T = 297.34 | P_photo = 1.164e-08
+[crew ×0.1] Step 4500/7200 (62.5%) | CO2 = 0.000689 | O2 = 0.209475 | T = 297.26 | P_photo = 1.147e-08
+[crew ×0.1] Step 5000/7200 (69.4%) | CO2 = 0.000673 | O2 = 0.209465 | T = 297.18 | P_photo = 1.129e-08
+[crew ×0.1] Step 5500/7200 (76.4%) | CO2 = 0.000659 | O2 = 0.209453 | T = 297.10 | P_photo = 1.110e-08
+[crew ×0.1] Step 6000/7200 (83.3%) | CO2 = 0.000646 | O2 = 0.209439 | T = 297.01 | P_photo = 1.091e-08
+[crew ×0.1] Step 6500/7200 (90.3%) | CO2 = 0.000635 | O2 = 0.209424 | T = 296.93 | P_photo = 1.073e-08
+[crew ×0.1] Step 7000/7200 (97.2%) | CO2 = 0.000625 | O2 = 0.209407 | T = 296.85 | P_photo = 1.054e-08
+[crew ×0.1] Step 7199/7200 (100.0%) | CO2 = 0.000622 | O2 = 0.209401 | T = 296.82 | P_photo = 1.051e-08
+
+========================================================================
+DIAGNOSTIC SUMMARY (crew ×0.1)
+========================================================================
+
+Time window: t = [646.0 h, 718.0 h] (37 records, actual span = 72.0 h)
+
+Carbon fluxes (mean over last 72.0 h), volume-averaged:
+  Photosynthesis   P_photo : +1.061739e-08 s^-1
+  Plant respiration R_plant: +9.736754e-09 s^-1
+  Crew production   R_crew : +8.263700e-10 s^-1
+  Net flux                 : -5.426168e-11 s^-1
+  (positive = net source of CO2, negative = net sink)
+
+CO2 / O2 / T statistics (last 72.0 h):
+  CO2 mean = 0.000629  min = 0.000622  max = 0.000636
+  O2  mean = 0.209413  min = 0.209401  max = 0.209425
+  T   mean = 296.88 K  min = 296.82  max = 296.94
+
+Basic gas threshold checks:
+  CO2 < 0.005 ?  → YES  (max = 0.000636)
+  O2  > 0.150 ?  → YES  (min = 0.209401)
+
+📁 Results saved in: TrajA_C2_30d_crew_0.100_20261106_080915
+========================================================================
+  -> renamed TrajA_C2_30d_crew_0.100_20261106_080915 -> TrajA_C2_12cubed_30d_crew_0.100_Y_B_x0.80_20261106_080915
+  -> row appended to spatial_convergence/spatial_convergence_12cubed.csv
+
+[run 4/4] Y_B_x0.80 DONE in 191.0 min
+  co2_max = 8.632622e-04  t_peak = 106.0 h  t_QPR = 106.3 h  dB = -4.093151e-03
+
+========================================================================
+COMPARISON 12^3 vs 17^3
+========================================================================
+metric      co2_max  delta_B  t_co2_peak_h  t_qpr_cross_h
+label                                                    
+Pmax_x0.80    0.361    0.721        -7.895         -1.274
+Pmax_x1.20    0.542    0.224         0.000         -0.330
+Y_B_x0.80     0.438   -0.345         0.000         -0.527
+baseline      0.482    0.352         0.000         -0.524
+
+------------------------------------------------------------------------
+VERDICT : ALARM -- max |diff| = 7.895 % > 5 %
+  -> Do NOT freeze F2; investigate.
+========================================================================

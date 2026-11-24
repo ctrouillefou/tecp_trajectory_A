@@ -1,0 +1,113 @@
+nohup: ignoring input
+==============================================================================
+TECP V10.3-Audit — Porte 1bis: Matter balance test (C2, 3 days)
+==============================================================================
+Date (UTC)     : 2026-11-09T01:23:47Z
+Host           : instance-20261013-090702
+User           : olfa_mabrouk_pro
+Working dir    : /home/olfa_mabrouk_pro/ds3
+Git commit     : bbd7394
+Python         : 3.10.12
+FiPy           : 4.0.3
+NumPy          : 2.2.6
+------------------------------------------------------------------------------
+Configuration:
+  K_CO2           = 1.0000e-03
+  PMAX_FACTOR     = 2.0
+  RMAINT_DIV      = 1.0
+  RQ              = 0.85
+  CREW            = 0.1
+  GAMMA           = 0.002
+  B_ROOT_FRAC     = 0.2
+  DURATION_DAYS   = 3
+  RECORD_STEP     = 1
+  DT              = 360 s
+  STROBE_STEPS    = 240
+  NX, NY, NZ      = 17, 17, 17
+  DX, DY, DZ      = 0.05, 0.05, 0.05
+  SPEED           = 64.0
+  BASELINE_SPEED  = 168.0
+  scale_ratio     = 2.625000
+  lambda_S_eff    = 4.340278e-07
+  k_prod_eff      = 4.340278e-08
+  k_basal_eff     = 4.340278e-11
+  Y_B             = 1.0
+  O2_cons_eff     = 9.7220e-10
+  CO2_prod_eff    = 8.2637e-10
+  Solver          = DefaultSolver(tolerance=1e-12, iterations=5000)
+------------------------------------------------------------------------------
+  Initial state   : theta=0.30, Temp=298.0 K, Cv=0.02, O2=0.21, CO2=4.0e-4
+                    bio=0.1*(0.8*M_photo+0.2*M_uptake), S=1.0000e-05, M=0.1000
+==============================================================================
+
+Launching C2 — 3 days, 720 steps, RECORD_STEP=1
+  Pmax x2.0, k_CO2=0.001, RQ=0.85, crew=0.1
+  S_INIT=1.0000e-05, M_INIT=0.1000
+  step 0/720 (0%) | CO2=4.0189e-04 | O2=0.2100 | bio=0.0224 | 2s
+  step 100/720 (14%) | CO2=5.5481e-04 | O2=0.2098 | bio=0.0224 | 269s
+  step 200/720 (28%) | CO2=6.5745e-04 | O2=0.2097 | bio=0.0224 | 627s
+  step 300/720 (42%) | CO2=7.2973e-04 | O2=0.2097 | bio=0.0224 | 1007s
+  step 400/720 (56%) | CO2=7.8300e-04 | O2=0.2096 | bio=0.0224 | 1419s
+  step 500/720 (69%) | CO2=8.2074e-04 | O2=0.2096 | bio=0.0224 | 1803s
+  step 600/720 (83%) | CO2=8.5043e-04 | O2=0.2095 | bio=0.0224 | 2183s
+  step 700/720 (97%) | CO2=8.7129e-04 | O2=0.2095 | bio=0.0224 | 2548s
+
+Run finished in 2619s (43.6 min)
+
+--- Water balance: PRIMARY test (cond_flux=None) ---
+
+========================================================================
+PORTE 1bis — MATTER BALANCE SUMMARY
+========================================================================
+
+[Carbon]  C_total = (CO2 + bio/Y_B) * V_total
+  C_total start = 1.397334e-02 CO2-eq.m3
+  C_total end   = 1.426464e-02 CO2-eq.m3
+  Delta C       = +2.913033e-04
+  Carbon  : PASS  (max_rel = 1.946e-07)
+
+[Oxygen]  O2_total = O2 * V_total
+  O2_total start = 1.289651e-01 m3
+  O2_total end   = 1.286516e-01 m3
+  Delta O2       = -3.134325e-04
+  Oxygen  : PASS  (max_rel = 1.581e-10)
+
+[Water]   H2O_total = (theta + Cv) * V_total
+  H2O_total start = 1.965207e-01 m3
+  H2O_total end   = 1.965204e-01 m3
+  Delta H2O       = -3.037100e-07
+  Mode            = strict conservation (theta <-> Cv only)
+  Water   : PASS  (max_rel = 5.884e-10)
+
+------------------------------------------------------------------------
+OVERALL: 3/3 balances PASS
+========================================================================
+
+--- Water balance: SECONDARY diagnostic (cond_flux=cond_mean) ---
+  mode = condensation leak (untracked condensate)
+  max_rel = 1.394e-06
+  bilan_closes = True
+
+Saved to Porte1bis/
+  - C2_3days_matter.csv  (720 records)
+  - matter_summary.csv   (4 verdicts: 3 primary + 1 secondary)
+  Positivity violations: 0
+==============================================================================
+RUN COMPLETE
+==============================================================================
+Elapsed        : 2618.6 s (43.6 min)
+Verdicts       :
+  Carbon    : PASS
+  Oxygen    : PASS
+  Water_primary: PASS
+  Water_secondary: PASS
+Positivity     : 0 violations
+Files written  :
+  - Porte1bis/C2_3days_matter.csv
+  - Porte1bis/matter_summary.csv
+------------------------------------------------------------------------------
+  Carbon max_rel  = 1.946e-07
+  Oxygen max_rel  = 1.581e-10
+  Water max_rel (primary)   = 5.884e-10
+  Water max_rel (secondary) = 1.394e-06
+==============================================================================

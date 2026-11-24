@@ -1,0 +1,58 @@
+{
+  "Pmax": 2.777777777777778e-06,
+  "R_maint": 5.555555555555555e-07,
+  "transpiration_coeff": 1.3888888888888888e-07,
+  "evap_coeff": 2.7777777777777776e-07,
+  "uptake_coeff": 5.555555555555556e-06,
+  "k_cond": 0.0001388888888888889,
+  "P_elt": 2.777777777777778e-06,
+  "Lv": 0.0001388888888888889,
+  "gamma": 0.002,
+  "gamma_M": 8.267195767195767e-08,
+  "lambda_S": 1.6534391534391535e-07,
+  "k_prod": 1.6534391534391535e-08,
+  "Km": 0.01,
+  "k_basal": 1.6534391534391535e-11,
+  "P_stress_threshold": 2.777777777777778e-08,
+  "Y_B": 1.0,
+  "delta_M": 1.6534391534391535e-08,
+  "n_hill": 2,
+  "O2_cons": 9.722e-09,
+  "CO2_prod": 1.157e-08,
+  "alpha_heat": 0.5,
+  "eta_heat": 0.05,
+  "x_split": 0.5,
+  "z_ceil": 0.9,
+  "z_sol_continental": 0.4,
+  "z_plant_max_continental": 0.8,
+  "z_sol_marsh": 0.2,
+  "z_plant_max_marsh": 0.6,
+  "RH_sat": 0.6,
+  "T_opt": 298.0,
+  "T_range": 10.0,
+  "k_CO2": 0.001,
+  "_metadata": {
+    "tau_base": 3600.0,
+    "scale_factors": {
+      "photosynthesis": 1.0,
+      "respiration": 1.0,
+      "evapotranspiration": 1.0,
+      "condensation": 1.0,
+      "thermal": 1.0,
+      "mycelial_growth": 168.0,
+      "mycorrhizal_signal": 168.0,
+      "soil_evolution": 720.0
+    },
+    "description": "Re-dimensionalised parameters for TECP V10.1 (audit-corrected)",
+    "formula": "For a rate: k_real = k_adim / (tau_base * s_i)\nFor a time constant: tau_real = tau_adim * (tau_base * s_i)",
+    "corrected_parameters": {
+      "k_CO2": "kept unchanged (concentration)",
+      "Y_B": "kept unchanged (yield)",
+      "P_stress_threshold": "scaled as a rate (photosynthesis); phenomenological threshold, NOT a CO2 compensation point"
+    },
+    "_changelog": {
+      "2026-10-24": "k_CO2 corrected 0.05 -> 0.001 (physiological, Farquhar 1980; Smith & Dukes 2013)",
+      "2026-10-24": "P_seuil renamed P_stress_threshold (was misleading: it is a stress threshold on a rate, not a CO2 compensation point)"
+    }
+  }
+}

@@ -1,0 +1,5 @@
+balance,verdict,max_relative_residual,note
+carbon,PASS,1.9462253959865825e-07,
+oxygen,PASS,1.581442009742056e-10,
+water_primary,PASS,5.884352031233263e-10,strict conservation (theta <-> Cv only)
+water_secondary,PASS,1.3936913724560687e-06,condensation leak (untracked condensate)

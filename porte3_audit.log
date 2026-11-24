@@ -1,0 +1,215 @@
+nohup: ignoring input
+==============================================================================
+TECP V10.3-Audit — Porte 3: B.2 parameter sensitivity audit
+==============================================================================
+Date (UTC)     : 2026-11-09T02:48:02Z
+Host           : instance-20261013-090702
+User           : olfa_mabrouk_pro
+Working dir    : /home/olfa_mabrouk_pro/ds3
+Git commit     : bbd7394
+Python         : 3.10.12
+FiPy           : 4.0.3
+NumPy          : 2.2.6
+------------------------------------------------------------------------------
+Configuration:
+  K_CO2_REF       = 1.0000e-03
+  PMAX_FACTOR     = 2.0
+  RMAINT_DIV      = 1.0
+  RQ              = 0.85
+  CREW            = 0.1
+  GAMMA           = 0.002
+  B_ROOT_FRAC     = 0.2
+  S_INIT          = 1.0000e-05
+  M_INIT          = 0.1000
+  DURATION_DAYS   = 3
+  RECORD_STEP     = 20
+  DT              = 360 s
+  STROBE_STEPS    = 240
+  Perturbation    : +/-20%
+  Total runs      : 9
+  Parameters      : ['k_CO2 (Michaelis)', 'Pmax', 'R_maint', 'P_stress_threshold (WWW chain)']
+  Solver          = DefaultSolver(tolerance=1e-12, iterations=5000)
+------------------------------------------------------------------------------
+  Sensitivity metric: S = 2.5 * (Y_+20 - Y_-20) / Y_ref
+  Verdicts: |S|<0.5 robust, 0.5-1.0 acceptable, >=1.0 fragile
+  Equilibrium: mean of last 24h (12 records at 2h intervals)
+  NOTE: P_stress_threshold tests the WWW signalling chain, NOT the C3 CO2 compensation point.
+==============================================================================
+
+========================================================================
+REFERENCE (factor = 1.0)
+========================================================================
+
+=== reference : 720 steps (3 days) ===
+  k_CO2=1.0000e-03  Pmax=5.5556e-06  R_maint=5.5556e-07  S_INIT=1.0000e-05
+  [reference] 0/720 (0%) | CO2=4.0189e-04 | O2=0.2100 | 2s
+  [reference] 100/720 (14%) | CO2=5.5481e-04 | O2=0.2098 | 253s
+  [reference] 200/720 (28%) | CO2=6.5745e-04 | O2=0.2097 | 621s
+  [reference] 300/720 (42%) | CO2=7.2973e-04 | O2=0.2097 | 1033s
+  [reference] 400/720 (56%) | CO2=7.8300e-04 | O2=0.2096 | 1461s
+  [reference] 500/720 (69%) | CO2=8.2074e-04 | O2=0.2096 | 1883s
+  [reference] 600/720 (83%) | CO2=8.5043e-04 | O2=0.2095 | 2275s
+  [reference] 700/720 (97%) | CO2=8.7129e-04 | O2=0.2095 | 2687s
+  [reference] finished in 2757s (45.9 min)
+
+========================================================================
+PARAMETER: k_CO2 (Michaelis) (key='k_CO2')
+========================================================================
+
+=== k_CO2_minus20 : 720 steps (3 days) ===
+  k_CO2=8.0000e-04  Pmax=5.5556e-06  R_maint=5.5556e-07  S_INIT=1.0000e-05
+  [k_CO2_minus20] 0/720 (0%) | CO2=4.0141e-04 | O2=0.2100 | 4s
+  [k_CO2_minus20] 100/720 (14%) | CO2=5.1518e-04 | O2=0.2099 | 394s
+  [k_CO2_minus20] 200/720 (28%) | CO2=5.8827e-04 | O2=0.2098 | 767s
+  [k_CO2_minus20] 300/720 (42%) | CO2=6.3739e-04 | O2=0.2097 | 1131s
+  [k_CO2_minus20] 400/720 (56%) | CO2=6.7217e-04 | O2=0.2097 | 1510s
+  [k_CO2_minus20] 500/720 (69%) | CO2=6.9498e-04 | O2=0.2097 | 1875s
+  [k_CO2_minus20] 600/720 (83%) | CO2=7.1264e-04 | O2=0.2097 | 2279s
+  [k_CO2_minus20] 700/720 (97%) | CO2=7.2373e-04 | O2=0.2096 | 2662s
+  [k_CO2_minus20] finished in 2731s (45.5 min)
+
+=== k_CO2_plus20 : 720 steps (3 days) ===
+  k_CO2=1.2000e-03  Pmax=5.5556e-06  R_maint=5.5556e-07  S_INIT=1.0000e-05
+  [k_CO2_plus20] 0/720 (0%) | CO2=4.0225e-04 | O2=0.2100 | 3s
+  [k_CO2_plus20] 100/720 (14%) | CO2=5.8616e-04 | O2=0.2098 | 381s
+  [k_CO2_plus20] 200/720 (28%) | CO2=7.1396e-04 | O2=0.2097 | 760s
+  [k_CO2_plus20] 300/720 (42%) | CO2=8.0709e-04 | O2=0.2096 | 1144s
+  [k_CO2_plus20] 400/720 (56%) | CO2=8.7780e-04 | O2=0.2095 | 1508s
+  [k_CO2_plus20] 500/720 (69%) | CO2=9.3028e-04 | O2=0.2094 | 1901s
+  [k_CO2_plus20] 600/720 (83%) | CO2=9.7236e-04 | O2=0.2094 | 2301s
+  [k_CO2_plus20] 700/720 (97%) | CO2=1.0037e-03 | O2=0.2094 | 2667s
+  [k_CO2_plus20] finished in 2735s (45.6 min)
+
+========================================================================
+PARAMETER: Pmax (key='Pmax')
+========================================================================
+
+=== Pmax_minus20 : 720 steps (3 days) ===
+  k_CO2=1.0000e-03  Pmax=4.4444e-06  R_maint=5.5556e-07  S_INIT=1.0000e-05
+  [Pmax_minus20] 0/720 (0%) | CO2=4.0247e-04 | O2=0.2100 | 4s
+  [Pmax_minus20] 100/720 (14%) | CO2=6.0953e-04 | O2=0.2098 | 381s
+  [Pmax_minus20] 200/720 (28%) | CO2=7.6286e-04 | O2=0.2096 | 757s
+  [Pmax_minus20] 300/720 (42%) | CO2=8.8226e-04 | O2=0.2095 | 1129s
+  [Pmax_minus20] 400/720 (56%) | CO2=9.7902e-04 | O2=0.2094 | 1505s
+  [Pmax_minus20] 500/720 (69%) | CO2=1.0568e-03 | O2=0.2093 | 1858s
+  [Pmax_minus20] 600/720 (83%) | CO2=1.1229e-03 | O2=0.2092 | 2217s
+  [Pmax_minus20] 700/720 (97%) | CO2=1.1771e-03 | O2=0.2092 | 2577s
+  [Pmax_minus20] finished in 2643s (44.1 min)
+
+=== Pmax_plus20 : 720 steps (3 days) ===
+  k_CO2=1.0000e-03  Pmax=6.6667e-06  R_maint=5.5556e-07  S_INIT=1.0000e-05
+  [Pmax_plus20] 0/720 (0%) | CO2=4.0132e-04 | O2=0.2100 | 3s
+  [Pmax_plus20] 100/720 (14%) | CO2=5.0506e-04 | O2=0.2099 | 355s
+  [Pmax_plus20] 200/720 (28%) | CO2=5.6772e-04 | O2=0.2098 | 721s
+  [Pmax_plus20] 300/720 (42%) | CO2=6.0713e-04 | O2=0.2098 | 1084s
+  [Pmax_plus20] 400/720 (56%) | CO2=6.3329e-04 | O2=0.2097 | 1435s
+  [Pmax_plus20] 500/720 (69%) | CO2=6.4880e-04 | O2=0.2097 | 1789s
+  [Pmax_plus20] 600/720 (83%) | CO2=6.6044e-04 | O2=0.2097 | 2181s
+  [Pmax_plus20] 700/720 (97%) | CO2=6.6662e-04 | O2=0.2097 | 2580s
+  [Pmax_plus20] finished in 2649s (44.2 min)
+
+========================================================================
+PARAMETER: R_maint (key='R_maint')
+========================================================================
+
+=== R_maint_minus20 : 720 steps (3 days) ===
+  k_CO2=1.0000e-03  Pmax=5.5556e-06  R_maint=4.4444e-07  S_INIT=1.0000e-05
+  [R_maint_minus20] 0/720 (0%) | CO2=4.0100e-04 | O2=0.2100 | 4s
+  [R_maint_minus20] 100/720 (14%) | CO2=4.8345e-04 | O2=0.2099 | 386s
+  [R_maint_minus20] 200/720 (28%) | CO2=5.3704e-04 | O2=0.2099 | 812s
+  [R_maint_minus20] 300/720 (42%) | CO2=5.7284e-04 | O2=0.2098 | 1211s
+  [R_maint_minus20] 400/720 (56%) | CO2=5.9789e-04 | O2=0.2098 | 1627s
+  [R_maint_minus20] 500/720 (69%) | CO2=6.1384e-04 | O2=0.2098 | 2012s
+  [R_maint_minus20] 600/720 (83%) | CO2=6.2609e-04 | O2=0.2097 | 2444s
+  [R_maint_minus20] 700/720 (97%) | CO2=6.3338e-04 | O2=0.2097 | 2866s
+  [R_maint_minus20] finished in 2943s (49.0 min)
+
+=== R_maint_plus20 : 720 steps (3 days) ===
+  k_CO2=1.0000e-03  Pmax=5.5556e-06  R_maint=6.6667e-07  S_INIT=1.0000e-05
+  [R_maint_plus20] 0/720 (0%) | CO2=4.0279e-04 | O2=0.2100 | 4s
+  [R_maint_plus20] 100/720 (14%) | CO2=6.2724e-04 | O2=0.2098 | 399s
+  [R_maint_plus20] 200/720 (28%) | CO2=7.8268e-04 | O2=0.2096 | 775s
+  [R_maint_plus20] 300/720 (42%) | CO2=8.9728e-04 | O2=0.2095 | 1185s
+  [R_maint_plus20] 400/720 (56%) | CO2=9.8588e-04 | O2=0.2094 | 1600s
+  [R_maint_plus20] 500/720 (69%) | CO2=1.0533e-03 | O2=0.2093 | 1982s
+  [R_maint_plus20] 600/720 (83%) | CO2=1.1086e-03 | O2=0.2093 | 2362s
+  [R_maint_plus20] 700/720 (97%) | CO2=1.1512e-03 | O2=0.2092 | 2742s
+  [R_maint_plus20] finished in 2815s (46.9 min)
+
+========================================================================
+PARAMETER: P_stress_threshold (WWW chain) (key='P_stress_threshold')
+========================================================================
+
+=== P_stress_threshold_minus20 : 720 steps (3 days) ===
+  k_CO2=1.0000e-03  Pmax=5.5556e-06  R_maint=5.5556e-07  S_INIT=1.0000e-05
+  [P_stress_threshold_minus20] 0/720 (0%) | CO2=4.0189e-04 | O2=0.2100 | 5s
+  [P_stress_threshold_minus20] 100/720 (14%) | CO2=5.5481e-04 | O2=0.2098 | 401s
+  [P_stress_threshold_minus20] 200/720 (28%) | CO2=6.5745e-04 | O2=0.2097 | 850s
+  [P_stress_threshold_minus20] 300/720 (42%) | CO2=7.2973e-04 | O2=0.2097 | 1333s
+  [P_stress_threshold_minus20] 400/720 (56%) | CO2=7.8300e-04 | O2=0.2096 | 1715s
+  [P_stress_threshold_minus20] 500/720 (69%) | CO2=8.2074e-04 | O2=0.2096 | 2052s
+  [P_stress_threshold_minus20] 600/720 (83%) | CO2=8.5043e-04 | O2=0.2095 | 2408s
+  [P_stress_threshold_minus20] 700/720 (97%) | CO2=8.7129e-04 | O2=0.2095 | 2769s
+  [P_stress_threshold_minus20] finished in 2855s (47.6 min)
+
+=== P_stress_threshold_plus20 : 720 steps (3 days) ===
+  k_CO2=1.0000e-03  Pmax=5.5556e-06  R_maint=5.5556e-07  S_INIT=1.0000e-05
+  [P_stress_threshold_plus20] 0/720 (0%) | CO2=4.0189e-04 | O2=0.2100 | 4s
+  [P_stress_threshold_plus20] 100/720 (14%) | CO2=5.5481e-04 | O2=0.2098 | 374s
+  [P_stress_threshold_plus20] 200/720 (28%) | CO2=6.5745e-04 | O2=0.2097 | 746s
+  [P_stress_threshold_plus20] 300/720 (42%) | CO2=7.2973e-04 | O2=0.2097 | 1099s
+  [P_stress_threshold_plus20] 400/720 (56%) | CO2=7.8300e-04 | O2=0.2096 | 1456s
+  [P_stress_threshold_plus20] 500/720 (69%) | CO2=8.2074e-04 | O2=0.2096 | 1824s
+  [P_stress_threshold_plus20] 600/720 (83%) | CO2=8.5043e-04 | O2=0.2095 | 2168s
+  [P_stress_threshold_plus20] 700/720 (97%) | CO2=8.7129e-04 | O2=0.2095 | 2536s
+  [P_stress_threshold_plus20] finished in 2604s (43.4 min)
+
+==============================================================================
+PORTE 3 — B.2 PARAMETER SENSITIVITY SUMMARY
+==============================================================================
+parameter                      value_ref     CO2_ref     CO2_-20     CO2_+20    S_CO2     verdict
+------------------------------------------------------------------------------
+k_CO2 (Michaelis)             1.0000e-03  8.4572e-04  7.0957e-04  9.6604e-04   +0.758  acceptable
+Pmax                          5.5556e-06  8.4572e-04  1.1140e-03  6.5818e-04   -1.347     fragile
+R_maint                       5.5556e-07  8.4572e-04  6.2388e-04  1.1006e-03   +1.409     fragile
+P_stress_threshold (WWW chain)  2.7778e-08  8.4572e-04  8.4572e-04  8.4572e-04   +0.000      robust
+------------------------------------------------------------------------------
+
+Secondary sensitivities:
+parameter                        S_O2     verdict    S_bio     verdict
+------------------------------------------------------------------------
+k_CO2 (Michaelis)              -0.003      robust   -0.000      robust
+Pmax                           +0.005      robust   +0.000      robust
+R_maint                        -0.006      robust   -0.000      robust
+P_stress_threshold (WWW chain)   -0.000      robust   +0.000      robust
+==============================================================================
+
+Recommendations:
+  [ACCEPTABLE] k_CO2 (Michaelis): S_CO2 = +0.758
+  [FRAGILE] Pmax: S_CO2 = -1.347 - investigate before manuscript
+  [FRAGILE] R_maint: S_CO2 = +1.409 - investigate before manuscript
+  [ROBUST] P_stress_threshold (WWW chain): S_CO2 = +0.000
+==============================================================================
+RUN COMPLETE
+==============================================================================
+Elapsed        : 24732.0 s (412.2 min)
+Verdicts       :
+  k_CO2 (Michaelis): acceptable
+  Pmax      : fragile
+  R_maint   : fragile
+  P_stress_threshold (WWW chain): robust
+Files written  :
+  - Porte3/reference.csv
+  - Porte3/sensitivity_summary.csv
+  - Porte3/k_CO2_minus20.csv
+  - Porte3/Pmax_minus20.csv
+  - Porte3/R_maint_minus20.csv
+  - Porte3/P_stress_threshold_minus20.csv
+  - Porte3/k_CO2_plus20.csv
+  - Porte3/Pmax_plus20.csv
+  - Porte3/R_maint_plus20.csv
+  - Porte3/P_stress_threshold_plus20.csv
+------------------------------------------------------------------------------
+  Overall: INVESTIGATE (2 fragile)
+  Fragile parameters: 2
+==============================================================================
