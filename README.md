@@ -11,9 +11,9 @@ This repository contains the **complete code, parameters, datasets, and analysis
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24438100.svg)](https://doi.org/10.5281/zenodo.24438100)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 
-Submitted to *Life Sciences in Space Research* (Elsevier).
+Submitted to *Ecological Frontiers* (SciEngine).
 
-> **DOI note.** `10.5281/zenodo.24438100` is real but *in progress* at the time of writing. It will be finalised upon Zenodo deposition. Until then, treat it as a placeholder.
+> **DOI :** `10.5281/zenodo.24438100` 
 
 The study presents a numerical investigation of **Trajectory A** of the **Toroidal Ecological Coupled Platform (TECP)** model — a three-dimensional reaction–diffusion model of a closed ecological reactor with two biomes (continental and marsh), a mycelium compartment, a mycorrhizal signalling variable, and a crew respiratory load.
 
@@ -86,7 +86,7 @@ pip install fipy==4.0.3 numpy==2.2.6 pandas matplotlib
 ├── analysis_F4_plateau.py               # F4 plateau-centre analysis (Step 6b)
 ├── check_csvs.py                        # Offline verifier (Step 7) — does NOT produce CSVs
 │
-├── plot_style.py                        # Elsevier/LSSR figure style (Okabe-Ito, 300 dpi)
+├── plot_style.py                        # figure style (Okabe-Ito, 300 dpi)
 ├── plot_fig1.py                         # manuscript Fig. 1 (CO₂ / O₂, 2 panels)
 ├── plot_fig2.py                         # manuscript Fig. 2 (T, B, S, M, 4 panels)
 │
@@ -196,7 +196,7 @@ python3 check_csvs.py
 
 ## Figure generation
 
-The two manuscript figures are produced by dedicated scripts that read `audit_timeseries.csv` and apply the Elsevier/LSSR style in `plot_style.py`:
+The two manuscript figures are produced by dedicated scripts that read `audit_timeseries.csv` and apply the Ecological Frontiers/SciEngine style in `plot_style.py`:
 
 | Manuscript figure | Script | Contents |
 |---|---|---|
@@ -264,12 +264,12 @@ GNU General Public License, version 3 (GPL-v3). See `LICENSE`.
 
 Trouillefou, C. M. (2026). *TECP Trajectory A — C2 reference: simulation code, data, and analysis scripts* [Software/Data]. Zenodo. https://doi.org/10.5281/zenodo.24438100 *(DOI pending)*
 
-Companion manuscript submitted to *Life Sciences in Space Research*:
+Companion manuscript submitted to *Ecological Frontiers (SciEngine)*:
 ```bibtex
 @article{Trouillefou2026TECP,
   title   = {Carbon-budget dynamics of a closed ecological reactor model. {I}. Reference configuration and functionally negligible mycorrhizal cooperation ({TECP} Trajectory A)},
   author  = {Trouillefou, Christophe Marcel},
-  journal = {Life Sciences in Space Research},
+  journal = {Ecological Frontiers},
   year    = {2026},
   note    = {Submitted},
   doi     = {10.5281/zenodo.24438100}
@@ -281,7 +281,7 @@ Companion manuscript submitted to *Life Sciences in Space Research*:
 Christophe Marcel Trouillefou
 Lycée Blaise Pascal, Lubumbashi, République démocratique du Congo
 Email: christophe.trouillefou@gmail.com
-GitHub: https://github.com/ctrouillefou/tecp
+GitHub: https://github.com/ctrouillefou/tecp_trajectory_A
 
 ---
 
@@ -293,4 +293,5 @@ GitHub: https://github.com/ctrouillefou/tecp
 ## Companion study
 
 A companion manuscript (**Trajectory C**, TECP V10.5) extends the present model with organic-matter and phosphorus cycles and tests the nutrient-limited regime in which the mycorrhizal cooperation pathway may become dynamically relevant. The present Trajectory A provides the nutrient-replete reference baseline against which Trajectory C is compared.
+```
 
